@@ -2,7 +2,7 @@
 import math
 
 def UpperConfidenceBound(step, numVisits):
-    upper = math.sqrt(2 * math.log(numVisits+1)/numVisits)
+    upper = math.sqrt(2 * math.log(step+1)/numVisits)  #sqrt(2 * ln(step+1)/numVisits) 
     #print("Upper Bounds for {} step with {} visits".format(step,numVisits))
     return upper
 
